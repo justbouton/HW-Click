@@ -25,12 +25,13 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
-      <Wrapper>
-        <Nav 
+      <div>
+      <Nav 
         highest={ this.state.highest }
         score={ this.state.score }
-        />
-        <Jumbotron />
+      />
+      <Jumbotron></Jumbotron>
+      <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
             removeFriend={this.removeFriend}
@@ -43,6 +44,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </div>
     );
   }
 }
