@@ -3,32 +3,21 @@ import "./style.css";
 
 function FriendCard(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-      <button className="btn btn-primary" value={props.clicked} onClick={() => props.handleClick()}>
-          Increment
-        </button>
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-          <li>
-            <strong>Clicked:</strong> {props.clicked}
-          </li>
-        </ul>
-      </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
+
+
+// <div class="card" style="width: 18rem;">
+//   <div class="card-body">
+//     <h5 class="card-title">Special title treatment</h5>
+//     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+//     <a href="#" class="btn btn-primary">Go somewhere</a>
+//   </div>
+// </div>
+    
+    // 
+
+
+    <div className="card-custom">
+        <img className="img" clicked={props.clicked} onClick={() => props.handleClick()} alt={props.name} src={props.image} />
     </div>
   );
 }
