@@ -11,12 +11,10 @@ function Nav(props) {
     </button>
     <div className="collapse navbar-collapse text-center" id="navbarText">
     <div className="navbar-nav ml-auto mr-auto">
-        {props.navMessageCustom}
-      <br />
-        Clicking the same image twice restarts the game.
+        {props.navMessage}
     </div>
       <div className="navbar-text">
-        Score: {props.score} | High Score: {props.highest}
+        Score: {props.score} | High Score: {props.highScore}
       </div>
     </div>
   </nav>
