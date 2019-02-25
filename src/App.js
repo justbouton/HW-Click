@@ -5,7 +5,7 @@ import Wrapper from "./components/Wrapper";
 import Friends from "./friends.json";
 
 class App extends Component {
-  // Setting state: Friends, highScore, score, cardClick, navMessage
+// Setting state: Friends, highScore, score, cardClick, navMessage
   state = {
     Friends,
     highScore: 0,
@@ -14,6 +14,7 @@ class App extends Component {
     navMessage: "Click a photo to begin! Clicking the same image twice restarts the game."
   };
 
+// Function to shuffle the photos
   shuffleArray = (array) => {
     let i = array.length - 1;
     for (; i > 0; i--) {
