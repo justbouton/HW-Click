@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/justbouton/HW-Click/precache-manifest.f008b1df24faa692bcfee6d385c68d3e.js"
+  "/HW-Click/precache-manifest.239bf2fd3e763e29c0202ecc1be1f817.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/justbouton/HW-Click/index.html", {
+workbox.routing.registerNavigationRoute("/HW-Click/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
